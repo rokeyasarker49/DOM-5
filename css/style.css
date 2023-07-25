@@ -1,0 +1,376 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: sans-serif;
+}
+
+
+body 
+{
+    
+    background-color: white;
+}
+
+section
+{
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+}
+
+.clock-container
+{
+    position: relative;
+}
+
+.clock 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
+}
+
+
+.clock span 
+{
+    position: absolute;
+    transform: rotate(calc(30deg * var(--i)));
+    inset: 12px;
+    text-align: center;
+}
+
+.clock span b 
+{
+    font-size: 20px;
+    transform: rotate(calc(-30deg * var(--i)));
+    display: inline-block;
+}
+
+
+.clock::before
+{
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: white;
+    z-index: 2;
+}
+
+.hand 
+{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.hand i 
+{
+    width: 4px;
+    height: 64px;
+    position: absolute;
+    background-color: #ff3d58;
+    border-radius: 8px;
+}
+
+.hand-2 
+{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.hand-2 i 
+{
+    width: 4px;
+    height: 74px;
+    position: absolute;
+    background-color: #00a6ff;
+    border-radius: 8px;
+}
+
+.hand-3
+{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.hand-3 i 
+{
+    width: 4px;
+    height: 84px;
+    position: absolute;
+    background-color: black;
+    border-radius: 8px;
+}
+
+
+.container
+{
+    width: 80%;
+    margin:auto;
+    padding: 10px;
+    padding-bottom: 50px;
+}
+
+
+.content
+{
+    text-align: center;
+    padding: 20px;
+}
+
+
+.content h2 
+{
+    font-size: 25px;
+    padding: 10px 20px;
+    color: rgba(0, 0, 255, 0.749);
+    border: 1px solid #212121;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.items 
+{
+    width: 100%;
+    display: flex;
+    border: 1px solid #212121;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.img
+{
+    display: flex;
+    height: 120px;
+    width: 15%;
+    overflow: hidden;
+    border: 1px solid #706d6d;
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+}
+
+.img img 
+{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.items-name
+{
+    width: 50%;
+}
+
+.items-name p
+{
+    font-size: 20px;
+    font-weight: 700;
+    padding: 20px;
+}
+
+.counter 
+{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.counter button
+{
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.counter p
+{
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    background-color: #f2f2f2;
+    border-radius: 3px;
+    border: 1px solid #212121;
+    margin: 3px;
+}
+
+.tk
+{
+    width: 17%;
+}
+
+.tk p 
+{
+    font-size: 25px;
+    font-weight: 600;
+    padding: 10px;
+}
+
+.remove-btn
+{
+    width: 3%;
+    padding: 5px;
+    cursor: pointer;
+    background-color: white;
+    border:1.5px solid red;
+    color: red;
+}
+
+.bottom-sec
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.promo-code
+{
+    width: 49%;
+    margin-top: 20px;
+    border: 1px solid #212121;
+    padding: 20px 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.promo-code h2 
+{
+    font-size: 25px;
+    padding: 10px 20px;
+    color: rgba(0, 0, 255, 0.749);
+    border: 1px solid #212121;
+    display: inline-block;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.promo-code-item
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+
+.promo-code-item input
+{
+    width: 74%;
+    padding: 10px;
+    height: 45px;
+    border: 1px solid #8e8888;
+    background-color: #fcfcfc;
+    border-radius: 5px;
+}
+
+.promo-code-item input:focus
+{
+    border: 1px solid #555;
+    outline: none;
+}
+
+.promo-code-item button
+{
+    color: white;
+    width: 25%;
+    padding: 10px;
+    height: 45px;
+    cursor: pointer;
+    font-weight: 500;
+    background-color: #0954f5;
+    border-color: rgba(0, 0, 255, 0.749);
+    border-radius: 5px;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+
+
+.price-calculate
+{
+    width: 49%;
+    margin-top: 20px;
+    border: 1px solid #212121;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: right;
+}
+
+.sub-total 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #212121;
+    padding-bottom: 10px;
+}
+
+.sub-total p 
+{
+    font-weight: 600;
+}
+
+.tax 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #212121;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.tax p 
+{
+    font-weight: 600;
+}
+
+.total 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.total p 
+{
+    font-weight: 600;
+}
+
+.cheak-out 
+{
+    color: white;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin-top: 15px;
+    background-color: #0954f5;
+    border-color: rgba(0, 0, 255, 0.749);
+    border-radius: 5px;
+    font-weight: 600;
+    font-family: sans-serif;
+}

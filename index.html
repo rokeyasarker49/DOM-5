@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn-Dom-04</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="content">
+        <h2>Clock Here</h2>
+    </div>
+
+    <section>
+
+
+        <div class="clock-container">
+
+            <div class="clock">
+    
+    
+                <div id="hours"  class="hand"><i></i></div>
+                <div id="minutes" class="hand-2"><i></i></div>
+                <div id="seconds" class="hand-3"><i></i></div>
+    
+                <span style="--i:1;"><b>1</b></span>
+                <span style="--i:2;"><b>2</b></span>
+                <span style="--i:3;"><b>3</b></span>
+                <span style="--i:4;"><b>4</b></span>
+                <span style="--i:5;"><b>5</b></span>
+                <span style="--i:6;"><b>6</b></span>
+                <span style="--i:7;"><b>7</b></span>
+                <span style="--i:8;"><b>8</b></span>
+                <span style="--i:9;"><b>9</b></span>
+                <span style="--i:10;"><b>10</b></span>
+                <span style="--i:11;"><b>11</b></span>
+                <span style="--i:12;"><b>12</b></span>
+    
+            </div>
+    
+        </div>
+
+    </section>
+
+
+
+    <div class="container">
+
+        <div class="content">
+            <h2>Add To Card</h2>
+        </div>
+
+
+        <div class="item-head">
+
+
+            <div class="items">
+
+                <div class="img"><img src="img/iphone14pro-cart.jpg" alt=""></div>
+                <div class="items-name" ><p>IPhone 14Pro Max</p></div>
+
+                <div class="counter">
+                    <button id="iphone-minac"><i class="fa-solid fa-minus"></i></button>
+                    <p id="iphone-number">0</p>
+                    <button id="iphone-plus"><i class="fa-solid fa-plus"></i></button>
+                </div>
+
+                <div class="tk">
+                    <p>$ <span id="iphone-price">0</span></p>
+                </div>
+
+                <button class="remove-btn"><i class="fa-solid fa-xmark"></i></button>
+
+
+            </div>
+
+
+
+            <div class="items">
+
+                <div class="img"><img src="img/mackbook-cart.jpg" alt=""></div>
+                <div class="items-name" ><p>MackBook Air M1</p></div>
+
+                <div class="counter">
+                    <button id="mac-minac"><i class="fa-solid fa-minus"></i></button>
+                    <p id="mac-number">0</p>
+                    <button id="mac-plus"><i class="fa-solid fa-plus"></i></button>
+                </div>
+
+                <div class="tk">
+                    <p>$ <span id="mac-price">0</span></p>
+                </div>
+
+                <button class="remove-btn"><i class="fa-solid fa-xmark"></i></button>
+
+            </div>
+
+
+
+            <div class="items">
+
+                <div class="img"><img src="img/iphone14pro-card-02.jpg" alt=""></div>
+                <div class="items-name" ><p>IPhone 13Pro Max</p></div>
+
+                <div class="counter">
+                    <button id="iphone-minac2"><i class="fa-solid fa-minus"></i></button>
+                    <p id="iphone-number2">0</p>
+                    <button id="iphone-plus2"><i class="fa-solid fa-plus"></i></button>
+                </div>
+
+                <div class="tk">
+                    <p>$ <span id="iphone-price2">0</span></p>
+                </div>
+
+                <button class="remove-btn"><i class="fa-solid fa-xmark"></i></button>
+
+
+            </div>
+
+
+
+            <div class="items">
+
+                <div class="img"><img src="img/mackbook-cart-02.jpg" alt=""></div>
+                <div class="items-name" ><p>MackBook Air Pro</p></div>
+
+                <div class="counter">
+                    <button id="mac-minac2"><i class="fa-solid fa-minus"></i></button>
+                    <p id="mac-number2">0</p>
+                    <button id="mac-plus2"><i class="fa-solid fa-plus"></i></button>
+                </div>
+
+                <div class="tk">
+                    <p>$ <span id="mac-price2">0</span></p>
+                </div>
+
+                <button class="remove-btn"><i class="fa-solid fa-xmark"></i></button>
+
+            </div>
+
+
+            
+        </div>
+
+
+
+
+
+        <div class="bottom-sec">
+
+
+            <div class="promo-code">
+                <h2>Promo Code</h2>
+
+                <div class="promo-code-item">
+
+                    <input id="promo-input" type="text" placeholder="Enter Your Promo Code">
+                    <button id="promo-btn">Get Discount</button>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="price-calculate">
+
+                <div class="sub-total">
+                    <p>SubTotal  : </p>
+                    <p>$ <span id="sub-total">0</span></p>
+                </div>
+                
+                <div class="tax">
+                    <p>Tax : 12%</p>
+                    <p>$ <span id="tax-ammount">0</span></p>
+                </div>
+    
+                <div class="total">
+                    <p>Total  : </p>
+                    <p>$ <span id="total-price">0</span></p>
+                </div>
+    
+                <button class="cheak-out">Cheak Out</button>
+    
+            </div>
+
+
+            
+        </div>
+
+
+
+
+    </div>
+    
+
+    <script src="js/script.js"></script>
+</body>
+</html>
